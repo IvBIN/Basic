@@ -3,13 +3,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .header{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     padding: 25px 0;
     font-family: 'Poppins', sans-serif;
-
 }
 .logo{
     padding-top: 5px;
@@ -55,7 +55,6 @@ a{
     font-family: 'Lato', sans-serif;
     margin-top: 20px;
     font-size: 16px;
-
 }
 .btn_start{
     display: block;
@@ -83,7 +82,6 @@ a{
 .sponsors > .container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-
 }
 .info{
     margin-top: 120px;
@@ -93,7 +91,7 @@ a{
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
     width: 750px;
-    margin: 0 auto;
+    margin: 0 auto 25px;
 }
 .cards{
     display: grid;
@@ -102,11 +100,12 @@ a{
     /*border: #119bd2;*/
 
 }
-
 .card_img{
-    /*margin: 10px 140px 150px;*/
-    margin-bottom: 150px;
- 
+    margin: 0 auto 15px;
+    display: block;
+    width: max-content;
+    position: relative;
+    left: -4%;
 }
 .card_img img{
     position: absolute;
@@ -114,17 +113,48 @@ a{
 }
 .card_img img:last-child{
     position: relative;
-    left: 6%;
+    right: -25%;
     margin-top: 20px;
 }
 .card:hover > .card_img img:first-child{
     transform: rotate(40deg);
 }
-.title_card{
+.card{
+    width: 100%;
+    padding: 50px 30px;
+    box-shadow: 0 0 4px rgba(128,128,128,16);
+    border-radius: 8px;
     text-align: center;
-    margin: 10px auto;
-}
-.text_card{
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    border: 1px solid white;
+    }
+.card:hover{
+    border: 1px solid red;
+}
+.card a{
+    display: block;
+    width: max-content;
+    margin: 15px auto 0;
+    color: black;
+}
+.card h2:hover{
+    color: darkmagenta;
+}
+.card h2{
+    margin: 50px 0 28px;
+}
+.card span{
+    font-size: 12px;
+    color: #666;
+}
+.title:before{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: linear-gradient(#be5735 0%, #c22f02 100%);
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 9%;
+    transform: translateX(-50%);
 }
