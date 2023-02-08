@@ -36,7 +36,7 @@ a{
 }
 .btn{
     background: #fe8464;
-    padding: 5px 9px;
+    padding: 10px 25px;
     height: max-content;
     width: max-content;
     border-radius: 8px;
@@ -157,4 +157,46 @@ a{
     left: 50%;
     top: 9%;
     transform: translateX(-50%);
+}
+.block{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas: "title img"
+                         "text img"
+                         "btn img";
+}
+.block h1{
+    grid-area: title;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 8px;
+}
+.block h1:before{
+    content: "";
+    width: 150px;
+    height: 5px;
+    background: linear-gradient(#be5735 0%, #c22f02 100%);
+    display: block;
+    position: relative;
+    left: 13%;
+    transform: translateX(-50%);
+}
+.text_block{
+    grid-area: text;
+    margin-top: -15px;
+    width: 480px;
+    color: #666;
+}
+.btn_block{
+    grid-area: btn;
+    margin: 0;
+}
+.img_block{
+    grid-area: img;
+    width: 550px;
+    float: right;
+
+}
+.about_us{
+    margin-top: 25px;
 }
