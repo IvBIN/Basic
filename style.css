@@ -232,8 +232,8 @@ a{
 .why_img a{
     position: absolute;
     color: black;
-    top: 50%;
-    left: 45%;
+    top: 45%;
+    left: 40%;
     font-size: 28px;
     z-index: 5;
 }
