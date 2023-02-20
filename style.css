@@ -4,6 +4,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.up{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    background: linear-gradient(90deg, #361cc1, #2e82ef);
+    border-radius: 6px;
+}
+.up i{
+    font-family: 'LineIcons', sans-serif;
+    font-style: normal;
+}
+.up i:before{
+    content: "\ea43";
+    position: relative;
+    top: 30%;
+    left: 30%;
 }
 .header{
     display: grid;
@@ -213,6 +233,8 @@ a{
                          "img text"
                          "img items";
     font-family: 'Poppins', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 .why_img{
     grid-area: img;

@@ -4,17 +4,20 @@
         <meta charset="UTF-8">
         <title>Basic</title>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./font-awesome.min.css">
+        <link rel="stylesheet" href="./LineIcons.css">
     </head>
     <body>
         <img class="bg" src="./images/banner-bg.svg" alt="header-hero">
-        <header>
+        <a href="#header" class="up"><i class="lni-chevron-up"></i></a>
+        <header id="header">
             <div class="container header">
                 <a class="logo" chref="#"><img src="./images/logo.svg" alt=""></a>
                 <nav>
-                    <a href="#">Home</a>
-                    <a href="#">Features</a>
-                    <a href="#">About</a>
-                    <a href="#">Why</a>
+                    <a href="#header">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#about_us">About</a>
+                    <a href="#why">Why</a>
                     <a href="#">Team</a>
                     <a href="#">Blog</a>
                 </nav>
@@ -39,7 +42,7 @@
                 <img src="./images/brand-5.png" alt="brand">
             </div>
         </div>
-        <div class="info">
+        <div id="features" class="info">
             <div class="container">
                 <div class="title"><b>Clean and simple desing,</b> Comes with everything you need to get started!</div>
                 <div class="cards">
@@ -73,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="about_us">
+        <div id="about_us" class="about_us">
             <div class="container">
                 <div class="blocks">
                     <div class="block">
@@ -99,7 +102,7 @@
             </div>
 
         </div>
-        <div class="why">
+        <div id="why" class="why">
             <div class="container why_block">
                 <input id="modal" type="checkbox">
                 <div class="bgv"></div>
@@ -126,6 +129,13 @@
                 </div>
             </div>
         </div>
+        <div class="team">
+            <div class="container">
+                <div class="title">Meet Out <b>Creative Team<br>Members</b></div>
+
+            </div>
+        </div>
+
 
     </body>
 </html>
