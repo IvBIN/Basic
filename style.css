@@ -335,36 +335,56 @@ a{
     text-align: center;
     font-size: 19px;
 }
-
-.team_blocks {
+.team{
+    margin-top: 85px;
+}
+.team_blocks{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 24px;
+    width: max-content;
+    margin: 0 auto;
+    grid-column-gap: 25px;
 }
 .team_block{
-    width: calc(1150px / 3);
-    padding: 50px 30px;
-    box-shadow: 0 0 4px rgba(128,128,128,16);
-    border-radius: 8px;
-    /*text-align: center;*/
-    /*font-family: 'Poppins', sans-serif;*/
-    border: 1px solid white;
+    width: 350px;
+    height: 408px;
+    display: grid;
+    grid-auto-rows: 2fr 1fr;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 4px #00000026;
 }
-.team_block_img:nth-child(1){
-    margin: 0 auto 15px;
-    display: block;
-    width: max-content;
-
+.team_img{
+    position: relative;
 }
-.team_block_img:nth-child(2){
-    margin: 0 auto 15px;
-    display: block;
+.links{
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
     width: max-content;
-
+    height: max-content;
+    padding: 15px 25px;
+    background: #ffffff3a;
+    border-radius: 25px;
 }
-.team_block_img:nth-child(3){
-    margin: 0 auto 15px;
-    display: block;
-    width: max-content;
-
+.links a:not(:last-child){
+    margin-right: 8px;
+}
+.team_text{
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+.team_text span{
+    font-size: 14px;
+    color: #666;
+}
+.team_block:hover .links{
+    background: linear-gradient(#fe8464, #fe6e9a);
+    cursor: pointer;
+}
+.team_img img{
+    width: 350px;
 }
