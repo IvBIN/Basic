@@ -388,3 +388,64 @@ a{
 .team_img img{
     width: 350px;
 }
+
+.comment{
+    width: 350px;
+    height: 376px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 5px #00000059;
+    border-radius: 12px;
+}
+.comm_img{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.stars i{
+    color: #fe8464;
+}
+.lni-quotation{
+    color: #2e82ef;
+    font-size: 30px;
+}
+.comment .text_block{
+    width: 100%;
+    margin-top: 15px;
+}
+.author{
+    position: relative;
+
+}
+.user_bg{
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    z-index: -5;
+}
+.user_photo{
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 85px;
+    padding-top: 13px;
+}
+.author h3,
+.author .text_block{
+   margin-left: 37%;
+}
+.author h3{
+    padding-top: 25px;
+}
+.author .text_block{
+    margin-top: 5px;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+}
+.comment_block{
+    margin-top: 40px;
+}
