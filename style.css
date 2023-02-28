@@ -449,3 +449,45 @@ a{
 .comment_block{
     margin-top: 40px;
 }
+
+
+
+.b_block{
+    margin-top: 35px;
+}
+.blog{
+    width: 360px;
+    height: 376px;
+    grid-auto-rows: 2fr 1fr;
+    overflow: hidden;
+    box-shadow: 0 0 5px #00000059;
+    border-radius: 12px;
+}
+.blog_pic{
+    text-align: center;
+    margin-top: 10px;
+}
+.blog_img{
+
+    margin-top: 20px;
+}
+.blog_img img{
+    width: 310px;
+}
+.lni-website{
+    color: #2e82ef;
+    font-size: 30px;
+}
+.blog_img h3,
+.text_blog{
+
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.blog_img h3{
+    color: #361cc1;
+}
+.blogs{
+    display: flex;
+    justify-content: space-between;
+}
