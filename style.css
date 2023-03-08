@@ -579,3 +579,8 @@ footer{
     z-index: -5;
     width: 100%;
 }
+
+.footer_main{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
